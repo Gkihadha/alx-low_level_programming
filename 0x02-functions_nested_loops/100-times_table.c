@@ -1,45 +1,46 @@
-#include "main.h"
+/*
+ * File: 100-times_table.c
+ */
+
+#include "holberton.h"
 
 /**
- * print_times_table - print a times table for a given number n
- * @n: the maximum number
- *
+ * print_times_table - Prints the times table of the input,
+ *                     starting with 0.
+ * @n: The value of the times table to be printed.
  */
 void print_times_table(int n)
 {
-	int i, j, product;
+	int num, mult, prod;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i <= n; ++i)
+		for (num = 0; num <= n; num++)
 		{
-			for (j = 0; j <= n; ++j)
+			_putchar('0');
+
+			for (mult = 1; mult <= n; mult++)
 			{
-				product = i * j;
-				if (j != 0)
-				{
-					_putchar(',');
+				_putchar(',');
+				_putchar(' ');
+
+				prod = num * mult;
+
+				if (prod <= 99)
 					_putchar(' ');
-					if (product < 100)
-						_putchar(' ');
-					if (product < 10)
-						_putchar(' ');
-				}
-				if (product >= 100)
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod >= 100)
 				{
-					_putchar('0' + product / 100);
-					_putchar('0' + (product % 100) / 10);
-					_putchar('0' + (product % 10));
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 				}
-				else if (product <= 9)
+				else if (prod <= 99 && prod >= 10)
 				{
-					_putchar('0' + product);
+					_putchar((prod / 10) + '0');
 				}
-				else
-				{
-					_putchar('0' + product / 10);
-					_putchar('0' + product % 10);
-				}
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}
