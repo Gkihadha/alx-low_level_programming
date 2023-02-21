@@ -1,21 +1,25 @@
-#include "main.h"
-#include "unistd.h"
+#include <stdio.h>
 
 /**
- * main - Prints natural numbers below 1024 that are
- * multiplies of 3 or 5
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: print the sum of all natural numbers below 1024
+ * which are multiples of 3 or 5
+ *
+ * Return: 0 (success)
  */
 int main(void)
 {
-	int a, b;
+	int i, sum;
 
-	for (a = 1; a < 1024; a++)
+	sum = 0;
+	for (i = 1; i < 1024; ++i)
 	{
-		if ((a % 3) == 0 || (a % 5) == 0)
-			b += a;
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			sum += i;
+		}
 	}
-	printf("%d\n", b);
+	printf("%d\n", sum);
 	return (0);
 }
