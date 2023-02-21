@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include "_main.h"
+=======
+#include <unistd.h>
+>>>>>>> ca5104559f6de5f7586bb7b20710c4fb1917edf0
 
 /**
  * main - Prints _putchar as a message.
