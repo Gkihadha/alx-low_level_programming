@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include "unistd.h"
+=======
+#include <main.h>
+>>>>>>> d2af3451f558ea816a21caee9af123d2b14fac7e
 
 /**
  * print_alphabet - Prints the alphabet in lowercase.
