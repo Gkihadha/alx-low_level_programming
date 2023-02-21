@@ -1,11 +1,11 @@
 # Functions, nested loops
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about header files, functions, loops and nested loops in **C language**.
+Project done during **Full Stack Software Engineering studies** at **ALX_Program**. It aims to learn about header files, functions, loops and nested loops in **C language**.
 
 ## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+* C files are compiled using `gcc - -Wall -Werror -Wextra -pedantic -std=gnu89`
+* C files are written according to Betty style
+* Tested on Ubuntu 20.04 LTS
 
 ## Files
 All of the following files are programs written in C:
