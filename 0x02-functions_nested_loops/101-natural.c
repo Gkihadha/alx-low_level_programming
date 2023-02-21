@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include "main.h"
+#include "unistd.h"
 
 /**
  * main - Prints natural numbers below 1024 that are
