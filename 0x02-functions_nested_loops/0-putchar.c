@@ -1,24 +1,28 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "_main.h"
 =======
 #include <unistd.h>
 >>>>>>> ca5104559f6de5f7586bb7b20710c4fb1917edf0
+=======
+#include "main.h"
+>>>>>>> 3645eb4ae67c701d288c8e96e510a6b0240ad13d
 
 /**
- * main - Prints _putchar as a message.
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Description: print _putchar follwed by a new line
+ * Return: 0 (success)
  */
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
-
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
-	{
-		_putchar(str[count]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
