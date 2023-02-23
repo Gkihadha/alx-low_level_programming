@@ -1,26 +1,18 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * print_last_digit - Prints the last digit
- * of a number.
+ * print_last_digit - print the last digit of a number
+ * @num: integer to be processed
  *
- * @n: input number as an integer.
- *
- * Return: last digit.
+ * Return: last digit of num
  */
-int print_last_digit(int n)
+int print_last_digit(int num)
 {
-	int l;
+	int result;
 
-	l = n % 10;
-	if (l < 0)
-	{
-		_putchar(-l + 48);
-		return (-l);
-	}
-	else
-	{
-		_putchar(l + 48);
-		return (l);
-	}
+	result = num % 10;
+	if (result < 0)
+		result = -result;
+	_putchar('0' + result);
+	return (result);
 }
