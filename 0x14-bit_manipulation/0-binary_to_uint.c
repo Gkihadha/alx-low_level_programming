@@ -5,6 +5,7 @@
  * @b: string containing the binary number
  *
  * Return: the converted number
+ * take two
  */
 unsigned int binary_to_uint(const char *b)
 {
