@@ -5,7 +5,7 @@ Project aims to learn about how to handle files (open, close, read and write), f
 ## Technologies
 * C files are compiled using `gcc`
 * C files are written according to the C90 standard
-* Tested on Ubuntu 20.04 LTS
+* Tested on Ubuntu 20.04 LTS 2
 
 ## Files
 All of the following files are programs written in C:
